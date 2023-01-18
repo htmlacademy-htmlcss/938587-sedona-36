@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Зинуров](https://up.htmlacademy.ru/htmlcss/36/user/938587).
-* Наставник: [Аня Волкова] (https://htmlacademy.ru/profile/id477715).
+* Наставник: [Аня Волкова](https://htmlacademy.ru/profile/id477715).
 
 ---
 
