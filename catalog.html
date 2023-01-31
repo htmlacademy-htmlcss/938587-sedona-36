@@ -8,7 +8,9 @@
 
 <body>
   <header class="main-header">
+    <a class="navigation-logo" href="index.html">
     <img class="page-header-logo" alt="Логотип Седона" src="#">
+    </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -18,7 +20,7 @@
           <a class="navigation-link" href="#">О седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="#">Гостиницы</a>
         </li>
       </ul>
       <div class="navigation-user">
@@ -54,6 +56,7 @@
     </header>
 
     <section class="hotel-filter">
+      <h2 class="visually-hidden">Выбор гостиницы</h2>
       <form class="catalog-filter" action="#" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -108,7 +111,9 @@
         <button class="btn" type="submit">Применить</button>
         <button class="btn" type="submit">Сбросить</button>
       </form>
-      <p>Найдено гостиниц:</p>
+      <p class="search">Найдено гостиниц:
+        <span class="search-result">38</span>
+      </p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвое</option>
         <option value="expensive">Сначала дорогое</option>
@@ -172,31 +177,28 @@
           <span class="hotel-card-rating-stars">2 звезды</span>
           <span class="hotel-card-rating">Рейтинг: 5,0</span>
         </li>
-      </ul>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-show-more">
-          ...
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
+      </ul>      
+        <ol class="pagination">
+          <li class="pagination-item">
+           <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+           <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+           <a class="pagination-link" href="#">4</a>
+          </li>             
+          <li class="pagination-item">
+           <a class="pagination-link" href="#">...</a>
+          </li>       
+          <li class="pagination-item">
+           <a class="pagination-link" href="#">10</a>
+          </li>
+        </ol>       
     </section>
-
     <section class="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -213,17 +215,17 @@
   <footer class="page-footer">
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="button" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">VK</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="button" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Telegram</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
