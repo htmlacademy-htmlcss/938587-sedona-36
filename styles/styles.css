@@ -14,13 +14,47 @@
   font-display: swap;
 }
 
-body {
+html {
+  height: 100%;
+}
+
+body { 
+  display: flex;
+  flex-direction: column;
   margin: 0px;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;  
   font-size: 18px;
   line-height: 21px;  
   background-color: #ffffff;
-  color: #000000;
+  color: #000000;  
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
