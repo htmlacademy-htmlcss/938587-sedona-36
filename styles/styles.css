@@ -18,9 +18,7 @@ html {
   height: 100%;
 }
 
-body { 
-  display: flex;
-  flex-direction: column;
+body {   
   margin: 0px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;  
@@ -32,12 +30,18 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1200px;  
 }
 
-.container-2 {
+.wrapper {
   margin: 0 auto;
   width: 1060px;
+}
+
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main-container {
@@ -83,13 +87,9 @@ body {
 }
 
 /*Header*/
-.main-header {
-  width: 1060px;
-  margin: 0 auto;
-}
-
 .navigation {
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;  
 }
 
 .navigation-list {
@@ -158,6 +158,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advantage {
@@ -183,6 +184,7 @@ body {
 
 .advantage-blue-block {
   display: flex;  
+  flex-wrap: wrap;  
 }
 
 .advantage-blue {  
@@ -223,6 +225,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;  
   justify-content: space-between;    
 }
 
@@ -312,13 +315,15 @@ body {
 }
 
 /*footer*/
-.page-footer {
-  width: 1060px;
-  margin: 0 auto;
+.flex-footer {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-between;
+}
+
+.page-footer {  
   margin-top: 40px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
 }
  
 .footer-contacts-telephone {
@@ -330,10 +335,9 @@ body {
 }
 
 /*catalog*/
-
 .selection-section {
   background: #487EAC url("../images/filter.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   color: #ffffff;   
 }
 
@@ -362,12 +366,14 @@ body {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;  
   justify-content: space-between;
   padding-bottom: 70px;
 }
 
 .catalog-filter-part {
   display: flex;
+  flex-wrap: wrap;  
   width: 370px;
 }
 
@@ -406,6 +412,7 @@ body {
 
 .select-block {
   display: flex;
+  flex-wrap: wrap;  
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -430,7 +437,7 @@ body {
 .hotels-list {  
   padding: 0;
   margin: 0;
-  display: flex;
+  display: flex;  
   flex-wrap: wrap;
 }
 
@@ -461,6 +468,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex; 
+  flex-wrap: wrap;  
   margin-top: 40px;
   margin-bottom: 60px;
   list-style: none;
