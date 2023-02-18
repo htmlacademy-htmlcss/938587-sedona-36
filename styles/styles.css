@@ -70,25 +70,26 @@ body {
   color: #ffffff;
 }
 
-.btn-blue {
-  background-color: #82B3D3;   
+.btn-apply, .btn-favorites {
+  background-color: #82B3D3; 
 }
 
 .btn-reset {    
   background-color: transparent;  
 }
 
-.btn-green {
+.btn-in-favorites {
   background-color: #7DB54F;
 }
 
 /*Header*/
 .navigation {
-  display: flex;
-  flex-wrap: wrap;  
+  display: flex;  
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 450px;
@@ -96,6 +97,8 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 312px;
   margin-left: auto;
 }
@@ -105,16 +108,34 @@ body {
 }
 
 .navigation-link {
+  display: block;
   line-height: 24px;
   font-size: 20px;
   font-weight: 700;
-  text-align: center;
+  text-align: center; 
   text-decoration: none;
   color: inherit;  
 }
 
+.navigation-list .navigation-link {
+  padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+  min-height: 20px;
+  min-width: 20px;
+  padding: 22px 12px;
+}
+
 .btn-navigation {
+  border-radius: 4px;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 34px; 
+  display: block;     
+  color: #ffffff; 
+  margin-top: 20px; 
 }
 /*Main*/
 .intro-index {   
@@ -142,11 +163,11 @@ body {
 
 .advantages-discription { 
   margin-top: 0;
-  margin-bottom: 69px; 
+  margin-bottom: 90px; 
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
+  color: #333333;  
 }
 
 .advantages-list {
@@ -162,32 +183,56 @@ body {
   text-align: center;
   width: 400px;
   height: 385px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
 }
 
 .advantage:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantage-title {  
+.advantage-center {
+  width: 230px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.advantage-title { 
+  margin: 0; 
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantage-description {
-  color: #333333;
+  margin: 0;
+  color: #333333;  
 }
 
-.advantage-blue-block {
+.advantage-blue-block {  
   display: flex;  
   flex-wrap: wrap;  
 }
 
-.advantage-blue {  
+.advantage-blue {    
   background-color: #82B3D3;
   color: #ffffff;
   text-align: center;
   width: 400px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.advantage-blue-center {
+  width: 230px;
+  height: 181px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
 }
 
 .advantage-blue-tittle {
@@ -195,6 +240,11 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
+}
+
+.advantage-blue-description {
+  margin: 0;
 }
 
 /*service*/
@@ -230,6 +280,23 @@ body {
   list-style-type: none;
   height: 385px;
   width: 400px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.service-item-picture {
+
+  min-width: 75px;
+  min-height: 72px;
+}
+
+.service-center {
+  width: 230px;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
 .service-item:nth-child(odd) {
@@ -237,6 +304,7 @@ body {
 }
 
 .service-item-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;  
   text-transform: uppercase;
@@ -244,6 +312,7 @@ body {
 
 .service-item-description {
   color: #333333;
+  margin: 0;
 }
 
 /*find-hotel*/
@@ -270,9 +339,14 @@ body {
 }
 
 .btn-find {
+  display: block;
   text-decoration: none;
   color: #ffffff;
-  font-weight: 700;    
+  font-weight: 700;
+  padding: 8px 50px; 
+  border-radius: 4px;
+  width: 276px;  
+  margin: 0 auto; 
 }
 
 /*subscribe*/
@@ -308,13 +382,28 @@ body {
   line-height: 36px;
   color: #ffffff;
   border: 0;
+  padding: 8px 50px;
+  border-radius: 0px 4px 4px 0px;
 }
 
 /*footer*/
 .flex-footer {
-  display: flex;
-  flex-wrap: wrap;  
+  display: flex;  
   justify-content: space-between;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  max-width: 184.5px;
+}
+
+.footer-social-item {
+  width: 47.33px;
+  height: 40px;    
 }
 
 .page-footer {  
@@ -443,7 +532,6 @@ body {
   list-style-type: none;
 }
 
-
 .hotel-card-title {  
   font-size: 24px;
   line-height: 28px;
@@ -478,7 +566,6 @@ body {
   background-color: #82B3D3;
   color: #ffffff;
 }
-
 
 .pagination-current {
   color: #000000;
