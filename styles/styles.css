@@ -70,6 +70,11 @@ body {
   color: #ffffff;
 }
 
+.btn-apply {
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
 .btn-apply, .btn-favorites {
   background-color: #82B3D3; 
 }
@@ -427,7 +432,8 @@ body {
 }
 
 .inner-header-title {
-  margin: 0; 
+  margin: 0;
+  padding: 0; 
   padding-top: 35px; 
   margin-bottom: 8px;
   font-size: 60px;
@@ -438,6 +444,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  display: flex;
 }
 
 .breadcrumbs-item {
@@ -446,7 +453,13 @@ body {
 
 .breadcrumbs-link {
   text-decoration: none;
-  font-size: 16px;    
+  font-size: 16px;  
+  margin-right: 28px;  
+}
+
+.breadcrumbs-house-link {
+  min-width: 13px;
+  max-height: 15px;
 }
 
 .catalog-filter {
@@ -458,6 +471,7 @@ body {
 
 .catalog-filter-part {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;  
   width: 370px;
 }
@@ -470,6 +484,7 @@ body {
   font-size: 20px;
   line-height: 24px; 
   font-weight: 700; 
+  margin-bottom: 32px;
 }
 
 .catalog-filter-group {  
@@ -485,6 +500,26 @@ body {
 
 .catalog-filter-item {
   list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-part_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-delimiter {
+  width: 288px;
+}
+
+.catalog-filter-delimiter_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  margin-top: 56px;
 }
 
 .control {  
@@ -508,10 +543,26 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 8px;
 }
 
 .select-control {
   color: #333333;
+}
+
+.card-size-block {
+  display: flex;
+  width: 160px;
+}
+
+.card-size-block-element {
+  min-width: 48px;
+  min-height: 48px;
+  background-color: transparent;
+}
+
+.card-size-block-element:not(:last-child) {
+  margin-right: 8px;
 }
 
 .hotel-card-link {
@@ -549,19 +600,31 @@ body {
 }
 
 .pagination {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex; 
-  flex-wrap: wrap;  
-  margin-top: 40px;
-  margin-bottom: 60px;
-  list-style: none;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;  
+  list-style-type: none;
+}
+
+.pagination-item {
+  min-width: 60px;
+  min-height: 60px;  
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  min-width: 23px;
+  min-height: 36px;
+  padding: 15px 0;
+  box-sizing: border-box;  
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
   text-decoration: none;
   background-color: #82B3D3;
   color: #ffffff;

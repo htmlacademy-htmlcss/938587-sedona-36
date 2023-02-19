@@ -36,9 +36,11 @@
               Избранное
             </span>
             </a>
-            <a class="btn navigation-link btn-navigation" href="#">
-              Хочу сюда!
-            </a>
+            <div>
+              <a class="btn-navigation btn" href="#">
+                Хочу сюда!
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -53,7 +55,9 @@
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">Главная</a>
+                  <a class="breadcrumbs-link breadcrumbs-house-link" href="index.html">
+                    <span class="visually-hidden">Главная</span>
+                  </a>
                 </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link">Гостиницы</a>
@@ -100,16 +104,20 @@
                 </fieldset>
               </div>
               <div class="catalog-filter-part_2">
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label for="lower-value" class="control"></label>
-                  <input type="text" id="lower-value" name="lower-value" placeholder="от">            
-                  <label for="maximum-value" class="control"></label>
-                  <input type="text" id="maximum-value" name="maximum-value" placeholder="до">            
-                  <meter min="0" max="100" high="70" value="72"></meter>
-                </fieldset>
-                <button class="btn btn-apply" type="submit">Применить</button>
-                <button class="btn btn-reset" type="submit">Сбросить</button>
+                <div class="catalog-filter-delimiter">
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                    <label for="lower-value" class="control"></label>
+                    <input type="text" id="lower-value" name="lower-value" placeholder="от">            
+                    <label for="maximum-value" class="control"></label>
+                    <input type="text" id="maximum-value" name="maximum-value" placeholder="до">            
+                    <meter min="0" max="100" high="70" value="72"></meter>
+                  </fieldset>
+                </div>
+                <div class="catalog-filter-delimiter_2">
+                  <button class="btn btn-apply" type="submit">Применить</button>
+                  <button class="btn btn-reset" type="submit">Сбросить</button>
+                </div>
               </div>
             </form>
           </div>
@@ -129,14 +137,14 @@
               <option value="expensive">Сначала дорогое</option>
               <option value="popular">Сначала популярное</option>
             </select>
-            <div> 
-              <a href="#" class="btn">
+            <div class="card-size-block"> 
+              <a href="#" class="btn card-size-block-element">
               <span class="visually-hidden">Показать список</span>
               </a>
-              <a class="btn" href="#">
+              <a class="btn card-size-block-element" href="#">
               <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a class="btn" href="#">
+              <a class="btn card-size-block-element" href="#">
               <span class="visually-hidden">Показать..</span>
               </a>
             </div>
@@ -216,7 +224,7 @@
 
         <section class="subscribe-2">
           <h2 class="subscribe-title-2">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description-2">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description-2">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter" action="#" method="post">
             <label class="visually-hidden" for="newsletter-email">Поле ввода e-mail</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
