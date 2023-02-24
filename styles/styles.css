@@ -133,12 +133,12 @@ body {
 }
 
 .btn-navigation {
+  display: block;   
   border-radius: 4px;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 34px; 
-  display: block;     
+  padding: 8px 34px;       
   color: #ffffff; 
   margin-top: 20px; 
 }
@@ -163,7 +163,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 
 .advantages-discription { 
@@ -172,7 +172,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;  
+  color: #333333;    
 }
 
 .advantages-list {
@@ -186,8 +186,7 @@ body {
 .advantage {
   list-style-type: none;
   text-align: center;
-  width: 400px;
-  height: 385px;
+  width: 400px;  
   display: flex;
   align-items: center;  
   justify-content: center;
@@ -199,7 +198,8 @@ body {
 
 .advantage-center {
   width: 230px;
-  height: 160px;
+  margin-top: 112.5px;
+  margin-bottom: 112.5px;  
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -210,6 +210,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-bottom: 62px;
 }
 
 .advantage-description {
@@ -233,8 +234,7 @@ body {
 }
 
 .advantage-blue-center {
-  width: 230px;
-  height: 181px; 
+  width: 230px;   
   display: flex;
   flex-direction: column;
   justify-content: space-between;  
@@ -246,6 +246,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 62px;
 }
 
 .advantage-blue-description {
@@ -282,8 +283,7 @@ body {
 
 .service-item {
   text-align: center;
-  list-style-type: none;
-  height: 385px;
+  list-style-type: none;  
   width: 400px;
   display: flex;
   align-items: center;  
@@ -291,14 +291,17 @@ body {
 }
 
 .service-item-picture {
-
-  min-width: 75px;
-  min-height: 72px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 75px;
+  max-height: 72px;
+  margin-bottom: 30px;
 }
 
 .service-center {
   width: 230px;
-  height: 223px;
+  margin-top: 81px;
+  margin-bottom: 81px;  
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -313,6 +316,7 @@ body {
   font-size: 24px;
   line-height: 28px;  
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .service-item-description {
@@ -348,6 +352,8 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   padding: 8px 50px; 
   border-radius: 4px;
   width: 276px;  
@@ -359,7 +365,10 @@ body {
   background: #83B3D3 url("../images/subscribe.jpg") no-repeat;
   background-size: 100% auto;
   color: #ffffff;
-  text-align: center;
+  text-align: center;  
+}
+
+.newsletter {
   padding-bottom: 104px;
 }
 
@@ -573,13 +582,11 @@ body {
 .hotels-list {  
   padding: 0;
   margin: 0;
-  display: flex;  
-  flex-wrap: wrap;
+  margin-bottom: 80px; 
 }
 
 .hotel-card {
-  width: 340px;
-  height: 438px;
+  width: 340px;  
   list-style-type: none;
 }
 
@@ -604,6 +611,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
@@ -628,6 +636,7 @@ body {
   text-decoration: none;
   background-color: #82B3D3;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -642,11 +651,11 @@ body {
 
 .subscribe-2 {  
   text-align: center;
+  padding-top: 96px;   
 }
 
 .subscribe-title-2 {
-  margin: 0;
-  padding-top: 96px;  
+  margin: 0;   
   padding-bottom: 20px;  
   font-size: 30px;
   line-height: 36px;
