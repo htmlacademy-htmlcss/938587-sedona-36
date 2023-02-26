@@ -71,58 +71,70 @@
             <form class="catalog-filter" action="#" method="get">
               <div class="catalog-filter-part">
                 <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура</legend>
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label for="swimming-pool" class="control">Бассейн</label>
-                      <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked>                 
+                      <label for="swimming-pool" class="control">
+                        <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked> 
+                      Бассейн
+                      </label>                
                     </li>
                     <li class="catalog-filter-item">
-                      <label for="parking" class="control">Парковка</label>
-                      <input class="control-input" type="checkbox" name="parking" id="parking" checked>        
+                      <label for="parking" class="control">
+                        <input class="control-input" type="checkbox" name="parking" id="parking" checked>
+                      Парковка
+                      </label>        
                     </li>
                     <li class="catalog-filter-item">
-                      <label for="wi-fi" class="control">Wi-Fi</label>
-                      <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">                 
+                      <label for="wi-fi" class="control">
+                        <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi"> 
+                      Wi-Fi
+                      </label>                
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья</legend>
+                  <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label for="type-group-1" class="control">Гостиница</label>
-                      <input class="control-input" type="radio" name="type-group" id="type-group-1" value="hotel" checked>                
+                      <label for="type-group-1" class="control">
+                        <input class="control-input" type="radio" name="type-group" id="type-group-1" value="hotel" checked>
+                      Гостиница
+                      </label>               
                     </li>
                     <li class="catalog-filter-item">
-                      <label for="type-group-2" class="control">Мотель</label>
-                      <input class="control-input" type="radio" name="type-group" id="type-group-2" value="motel">                 
+                      <label for="type-group-2" class="control">
+                        <input class="control-input" type="radio" name="type-group" id="type-group-2" value="motel"> 
+                      Мотель  
+                      </label>              
                     </li>
                     <li class="catalog-filter-item">
-                      <label for="type-group-3" class="control">Апартаменты</label>
-                      <input class="control-input" type="radio" name="type-group" id="type-group-3" value="apartments">                
+                      <label for="type-group-3" class="control">
+                        <input class="control-input" type="radio" name="type-group" id="type-group-3" value="apartments">
+                      Апартаменты
+                      </label>                
                     </li>
-                  </ul>
+                  </ul> 
                 </fieldset>
               </div>
               <div class="catalog-filter-part_2">                
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <div class="wrapper-23">
-                    <div>
+                    <div class="wrapper-field">
+                    <div class="field-from">
                     <label for="lower-value" class="control"></label>
-                    <input class="field-23" type="text" id="lower-value" name="lower-value" placeholder="от"> 
+                    <input type="text" id="lower-value" name="lower-value" placeholder="от" maxlength="10"> 
                     </div> 
-                    <div>       
+                    <div class="field-up">       
                     <label for="maximum-value" class="control"></label>
-                    <input class="field-23" type="text" id="maximum-value" name="maximum-value" placeholder="до"> 
+                    <input type="text" id="maximum-value" name="maximum-value" placeholder="до"> 
                     </div> 
                     </div>                      
                   </fieldset>
                 </div>
                 <div class="catalog-filter-delimiter_2">
                   <button class="btn btn-apply" type="submit">Применить</button>
-                  <button class="btn btn-reset" type="submit">Сбросить</button>            
+                  <button class="btn btn-reset" type="submit">Сбросить</button>         
               </div>
             </form>
           </div>

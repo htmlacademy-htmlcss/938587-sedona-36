@@ -75,6 +75,8 @@ body {
 
 .btn-apply {
   padding: 8px 50px; 
+  width: 191px;
+  margin-left: auto;
 }
 
 .btn-apply, .btn-favorites {
@@ -82,7 +84,10 @@ body {
 }
 
 .btn-reset {    
-  background-color: transparent;  
+  background-color: transparent;
+  padding: 8px 57px; 
+  width: 191px;
+  margin-left: auto; 
 }
 
 .btn-in-favorites {
@@ -116,6 +121,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 312px;
+  max-height: 74px;
   margin-left: auto;
 }
 
@@ -131,15 +137,14 @@ body {
   font-weight: 700;
   text-align: center; 
   text-decoration: none;
-  color: inherit;  
+  color: inherit;    
 }
 
 .navigation-list .navigation-link {
   padding: 20px 16px;
 }
 
-.navigation-user .navigation-link {
-  min-height: 20px;
+.navigation-user .navigation-link {    
   min-width: 20px;
   padding: 22px 12px;
 }
@@ -515,18 +520,17 @@ body {
 
 .catalog-filter {
   display: flex;
-  flex-wrap: wrap;  
   justify-content: space-between;
+  flex-wrap: wrap;   
   padding-bottom: 70px;
 }
 
 .catalog-filter-part {
   display: flex;
-  justify-content: space-between;
-   
+  justify-content: space-between;   
   width: 371px;
+  
 }
-
 
 .catalog-filter-title { 
   font-size: 20px;
@@ -538,22 +542,29 @@ body {
 .catalog-filter-group {   
   margin: 0;
   padding: 0;
-  border: none;
-  width: 288px;  
+  border: none;   
 }
 
-
-.field-23 {
-  width: 143px;
-  border: none;
+.field-from input, .field-up input {  
+  border: none;  
   padding: 0;
+  width: 143px;
+  height: 48px;
+  background: #F2F2F2;   
 }
 
-.wrapper-23 {
-  display: flex;
-
+.field-from input {  
+  border-radius: 4px 0px 0px 4px; 
+  margin-right: 2px;
 }
 
+.field-up input {
+  border-radius: 0px 4px 4px 0px; 
+}
+
+.wrapper-field {
+  display: flex;  
+}
 
 .catalog-filter-list {
   margin: 0;
@@ -563,7 +574,6 @@ body {
 .catalog-filter-item {
   list-style-type: none;
   display: flex;
-
 }
 
 .catalog-filter-item:not(:last-child) {
