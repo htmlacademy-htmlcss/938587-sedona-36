@@ -321,7 +321,12 @@ body {
   margin-left: auto;
   max-width: 75px;
   max-height: 72px;
-  margin-bottom: 30px;
+  margin-bottom: 30px;  
+}
+
+.service-item-picture-home {
+  background-image: url("../images/icons/service-list/");
+  background-repeat: no-repeat; 
 }
 
 .service-center {
@@ -451,11 +456,22 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   max-width: 184.5px;
+
 }
 
 .footer-social-item {
   width: 47.33px;
-  height: 40px;    
+  height: 40px; 
+  position: relative;   
+}
+
+.button svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .page-footer {  
@@ -555,7 +571,7 @@ body {
 
 .field-from input {  
   border-radius: 4px 0px 0px 4px; 
-  margin-right: 2px;
+  margin-right: 2px;  
 }
 
 .field-up input {
@@ -620,6 +636,10 @@ body {
 
 .select-control {
   color: #333333;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 292px;
 }
 
 .card-size-block {
@@ -628,6 +648,9 @@ body {
 }
 
 .card-size-block-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 48px;
   min-height: 48px;
   background-color: transparent;
