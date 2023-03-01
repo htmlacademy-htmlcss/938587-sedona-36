@@ -108,6 +108,10 @@ body {
   display: flex;  
 }
 
+.page-header-logo {
+  position: relative;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +125,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 312px;
-  max-height: 74px;
+  max-height: 64px;
   margin-left: auto;
 }
 
@@ -158,6 +162,20 @@ body {
   margin: auto;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -2px;
+  height: 2px;
+  background-color: #756257;
+}
+
 .btn-navigation {
   display: block;     
   color: #ffffff;
@@ -165,13 +183,14 @@ body {
   line-height: 20px;
   padding: 8px 34px;       
   color: #ffffff; 
-  margin-top: 20px;
+  margin-top: 14px;
   margin-left: 20px; 
 }
 /*Main*/
 .intro-index {   
   background: #487EAC url("../images/index-background.jpg") no-repeat;
   background-size: 100% auto;
+  margin-top: -9px;
 }
 
 .main-logo {
@@ -232,11 +251,33 @@ body {
 }
 
 .advantage-title { 
+  position: relative;
   margin: 0; 
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 62px;
+}
+
+.advantage-title-border::before, .advantage-title-border-2::before, .advantage-title-border-3::before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 2px;
+  bottom: -30px;   
+}
+
+.advantage-title-border::before {
+  margin-left: 40px;
+}
+
+.advantage-title-border-2::before {
+  margin-left: 25px;
+}
+
+.advantage-title-border-3::before {
+  
 }
 
 .advantage-description {
@@ -267,12 +308,30 @@ body {
 }
 
 .advantage-blue-tittle {
+  position: relative;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
   margin-bottom: 62px;
+}
+
+.advantage-blue-tittle-border::before, .advantage-blue-tittle-border-2::before {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  width: 60px;
+  height: 2px;
+  bottom: -30px; 
+}
+
+.advantage-blue-tittle-border::before {
+  margin-left: 40px;
+}
+
+.advantage-blue-tittle-border-2::before {  
+  margin-left: 25px;
 }
 
 .advantage-blue-description {
