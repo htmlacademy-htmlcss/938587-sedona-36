@@ -171,7 +171,7 @@ body {
   content: "";
   right: 16px;
   left: 16px;
-  bottom: -2px;
+  top: 64px;
   height: 2px;
   background-color: #756257;
 }
@@ -259,27 +259,6 @@ body {
   margin-bottom: 62px;
 }
 
-.advantage-title-border::before, .advantage-title-border-2::before, .advantage-title-border-3::before {
-  position: absolute;
-  content: "";
-  background: rgba(0, 0, 0, 0.3);
-  width: 60px;
-  height: 2px;
-  bottom: -30px;   
-}
-
-.advantage-title-border::before {
-  margin-left: 40px;
-}
-
-.advantage-title-border-2::before {
-  margin-left: 25px;
-}
-
-.advantage-title-border-3::before {
-  
-}
-
 .advantage-description {
   margin: 0;
   color: #333333;  
@@ -317,21 +296,21 @@ body {
   margin-bottom: 62px;
 }
 
-.advantage-blue-tittle-border::before, .advantage-blue-tittle-border-2::before {
+.advantage-title-border::before, .advantage-title-border-2::before {
   position: absolute;
-  content: "";
-  background: rgba(255, 255, 255, 0.3);
+  content: ""; 
   width: 60px;
   height: 2px;
-  bottom: -30px; 
+  top: 86px;
+  left: 85px;
 }
 
-.advantage-blue-tittle-border::before {
-  margin-left: 40px;
+.advantage-title-border::before {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.advantage-blue-tittle-border-2::before {  
-  margin-left: 25px;
+.advantage-title-border-2::before {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .advantage-blue-description {
@@ -555,6 +534,7 @@ body {
   background: #487EAC url("../images/filter.jpg") no-repeat;
   background-size: 100% auto;
   color: #ffffff;   
+  margin-top: -9px;
 }
 
 .inner-header-title {
@@ -575,6 +555,15 @@ body {
 
 .breadcrumbs-item {  
   list-style-type: none;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  background-color: #242424;
+  
 }
 
 .breadcrumbs-link {  
@@ -584,8 +573,8 @@ body {
 }
 
 .breadcrumbs-house-link { 
-  min-width: 13px; 
-  min-height: 15px;  
+  width: 13px; 
+  height: 15px;  
   display: inline-block;
   background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat; 
