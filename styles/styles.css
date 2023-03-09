@@ -78,7 +78,8 @@ body {
 }
 
 .btn-apply {
-  padding: 8px 44px;    
+  padding: 8px 44px; 
+  width: 191px;   
 }
 
 .btn-apply, .btn-favorites {
@@ -87,7 +88,7 @@ body {
 
 .btn-reset {    
   background-color: transparent;
-  padding: 8px 57px; 
+  padding: 8px 44px; 
   border: 3px solid transparent; 
 }
 
@@ -128,15 +129,16 @@ body {
 }
 
 .newsletter-btn {
+  padding: 0;
+  padding: 8px 50px;
   font-style: normal;
   background-color: #82B3D3;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 36px;
-  min-width: 132px;
+  width: 232px;
   color: #ffffff;
   border: 0;
-  padding-left: 50px;
-  padding-right: 50px ;
+  
   border-radius: 0px 4px 4px 0px;  
 }
 
@@ -306,7 +308,7 @@ color: #FFFFFF;
 /*advantages*/
 .advantages-title {
   margin: 0;
-  margin-top: 69px;
+  margin-top: 65px;
   margin-bottom: 25px;  
   font-size: 30px;
   line-height: 36px;
@@ -669,6 +671,7 @@ a.footer-contacts-logo {
   padding: 0;
   margin-bottom: 40px;
   display: flex;
+  max-height: 21px;
 }
 
 .breadcrumbs-item {  
@@ -715,20 +718,19 @@ a.footer-contacts-logo {
 }
 
 .catalog-filter {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
   flex-wrap: wrap;   
-  padding-bottom: 70px;
+  padding-bottom: 70px; 
 }
 
 .catalog-filter-part {
-  display: flex;
-  justify-content: space-between;   
-  width: 371px;
-  
+  display: flex; 
+  margin-right: 151px; 
 }
 
-.catalog-filter-title { 
+.catalog-filter-title {
+  margin: 0; 
+  padding: 0;
   font-size: 20px;
   line-height: 24px; 
   font-weight: 700; 
@@ -738,7 +740,11 @@ a.footer-contacts-logo {
 .catalog-filter-group {   
   margin: 0;
   padding: 0;
-  border: 0;   
+  border: 0;     
+}
+
+.catalog-filter-group:first-child {   
+  margin-right: 70px;
 }
 
 .field-from input, .field-up input {  
@@ -746,8 +752,8 @@ a.footer-contacts-logo {
   line-height: 24px;
   border: 0;  
   padding: 0;
-  width: 118px;
-  height: 44px;
+  width: 117.5px;
+  height: 43.5px;
   background: #F2F2F2;
   border: 3px solid transparent; 
   text-align: right;
@@ -808,10 +814,92 @@ a.footer-contacts-logo {
   flex-direction: column;
   justify-content: space-between;  
   margin-top: 56px;
+  margin-left: auto;
 }
 
-.control {  
+.control {
   line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px; 
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;  
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;  
+  background-image: url("../images/icons/check-mark.svg");
+  background-repeat: no-repeat;   
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+ position: absolute;
+  content: "";
+  top: 4.5px;
+  left: 4.5px;
+  width: 11px;
+  height: 11px;  
+  background-image: url("../images/icons/circle-radio.svg");
+  background-repeat: no-repeat; 
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 40px;
+  background-color: #6e7577;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;  
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0px;
 }
 
 .hotel-filter {
