@@ -745,44 +745,55 @@ a.footer-contacts-logo {
   margin-right: 70px;
 }
 
-.field-from input, .field-up input {   
+.field-from input, .field-up input {    
   font-family: inherit;   
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
+  font-weight: 700;   
   border: 0;  
   padding: 0;
-  width: 117.5px;
-  height: 43.5px;
+  padding: 9.5px 40px 9.5px 20px;  
+  width: 76px;
   background: #f2f2f2;
-  border: 3px solid transparent; 
-  text-align: right;
-  padding-right: 20px;    
+  border: 3px solid transparent;     
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .field-from, .field-up {
   position: relative;
 }
 
-.field-from::before  { 
+.field-from::before { 
   position: absolute;
-  content: "0";
+  content: "от";
   top: 12px;
-  left: 20px;
-  color: #000000;
-  font-weight: 700;
+  right: 20px;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 24px;  
+  line-height: 24px;
+  color: #a9a9a9; 
 }
 
-.field-up::before  { 
+.field-up::before { 
   position: absolute;
-  content: "9000";
+  content: "до";
   top: 12px;
-  left: 20px;
-  color: #000000;
-  font-weight: 700;
+  right: 20px;
   font-size: 18px;
-  line-height: 24px;  
+  line-height: 24px;
+  color: #a9a9a9; 
 }
 
 .field-from input {  
@@ -1198,4 +1209,280 @@ a.footer-contacts-logo {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+/*modal*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);  
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {  
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 577px;
+}
+
+.modal-content {
+  position: relative;  
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.modal-close-button {
+  position: absolute;
+  content: "";
+  padding: 0;
+  top: 0;
+  right: -18px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;  
+  cursor: pointer;  
+} 
+
+.modal-close-button:hover {
+  background: #e6e6e6;
+}
+
+.modal-close-button:active svg {
+  fill-opacity: 0.3;
+}
+
+.field-group {
+  position: relative;
+  display: flex;    
+}
+
+.field-group label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  align-self: center;
+}
+
+.field-group svg:not(:last-child) {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  fill-opacity: 0.3;
+}
+
+.search-form-field {   
+  padding: 12px 45px 12px 20px;
+  border-radius: 4px;
+  width: 375px;   
+  font-weight: 700;    
+  margin-left: auto;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+ 
+ .search-form-field:hover {
+  background: #E6E6E6;
+}
+
+.search-form .field-group {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.form-message::after, .form-message-error::after {
+  position: absolute;  
+  left: 157px;
+  top: 52px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;   
+}
+
+.form-message::after {
+  color: #333333;
+  content: "На эти даты есть свободные номера. Пока есть.";
+}
+
+.form-message-error::after {
+  color: #FF5757;
+  content: "Мы не можем отправить вас в прошлое";
+}
+
+.field-group-half {
+  display: flex;
+}
+
+.field-group-half:first-child {
+  margin-right: 88px;
+}
+
+.number-adults {
+  display: flex; 
+  position: relative;
+  max-height: 48px;
+  margin-left: 46px;
+}
+
+.modal-button-min svg{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.modal-button-min:hover svg  {
+  fill: #000000;
+}
+
+.modal-button-min:active svg  {
+  fill: rgba(117, 97, 87, 0.3);;
+}
+
+.modal-button-max svg{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.modal-button-max:hover svg  {
+  fill: #000000;
+}
+
+.modal-button-max:active svg  {
+  fill: rgba(117, 97, 87, 0.3);;
+}
+
+.number-child {
+  display: flex;
+  position: relative;  
+}
+
+.count-field {
+  background: #f2f2f2;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;    
+  width: 90px;
+  padding: 14px 10px;
+  margin: 0;
+  border: none;
+}
+
+.modal-button-min {
+  position: absolute;
+  content: "";  
+  width: 40px;
+  height: 48px;
+  left: 0;    
+  padding: 0;
+  border-radius: 4px;
+  border: 0;
+}
+
+.modal-button-max {
+  position: absolute;
+  content: "";  
+  width: 40px;
+  height: 48px;
+  right: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+}
+
+.modal-button-min svg {
+  margin-bottom: 5px;
+}
+
+.appointment-submit {
+  padding: 18px;
+  width: 100%;
+  background: #83b3d3;
+  border-radius: 10px;  
+  font-style: normal;  
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.appointment-submit:hover, .appointment-submit:focus {
+  background-color: #68a2ca;
+}
+
+.appointment-submit:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.tooltip {
+  margin-top: 12px;
+}
+
+.tooltip-toggle {
+  background: #83b3d3;
+  border: none;
+  border-radius: 50%;   
+  margin-left: 10px;  
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-text {
+  position: absolute;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;    
+  width: 216px; 
+  top: 100%;
+  right: 37px;
+  display: none;  
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;  
+  top: -9px;  
+  left: 113px;  
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
