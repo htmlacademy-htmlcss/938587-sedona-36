@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -247,7 +247,7 @@
             Только полезная информация и никакого спама,<br />
             честное бойскаутское!
           </p>
-          <form class="newsletter" action="#" method="post">
+          <form class="newsletter" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">
               Поле ввода e-mail
             </label>
@@ -388,6 +388,7 @@
                 name="search-arrival-date"
                 placeholder="Укажите дату"
                 value="27 апреля 2020"
+                required
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -416,6 +417,7 @@
                 name="search-date-departure"
                 placeholder="Укажите дату"
                 value="1 сентября 2023"
+                required
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -439,7 +441,7 @@
               <div class="field-group-half">
                 <label for="count-field">Взрослые:</label>
                 <div class="number-adults">
-                  <button class="modal-button-min" type="submit">
+                  <button class="modal-button-min" type="button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -449,8 +451,8 @@
                       <path d="M0 0v2h14V0H0Z" />
                     </svg>
                   </button>
-                  <input class="count-field" type="number" value="2" id="count-field" />
-                  <button class="modal-button-max" type="submit">
+                  <input class="count-field" type="number" value="2" id="count-field" name="count-field-adults" required />
+                  <button class="modal-button-max" type="button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -495,7 +497,7 @@
                   >
                 </span>
                 <div class="number-adults">
-                  <button class="modal-button-min" type="submit">
+                  <button class="modal-button-min" type="button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -505,8 +507,8 @@
                       <path d="M0 0v2h14V0H0Z" />
                     </svg>
                   </button>
-                  <input class="count-field" type="number" value="2" id="count-field-2" />
-                  <button class="modal-button-max" type="submit">
+                  <input class="count-field" type="number" value="2" id="count-field-2" name="count-field-children" required/>
+                  <button class="modal-button-max" type="button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -519,7 +521,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn appointment-submit">Найти</button>
+            <button class="btn appointment-submit" type="submit">Найти</button>
           </form>
         </section>
       </div>

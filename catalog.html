@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -94,7 +94,7 @@
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a href="" class="breadcrumbs-link">Гостиницы</a>
+                  <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
               </ul>
             </header>
@@ -106,7 +106,7 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label for="swimming-pool" class="control">
-                        <input
+                        <input                        
                           class="visually-hidden control-input"
                           type="checkbox"
                           name="swimming-pool"
@@ -163,7 +163,7 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label for="type-group-2" class="control">
-                        <input
+                        <input                        
                           class="visually-hidden control-input"
                           type="radio"
                           name="type-group"
@@ -196,24 +196,26 @@
                   <div class="wrapper-field">
                     <div class="field-from">
                       <label for="lower-value" class="control"></label>
-                      <input
+                      <input                      
                         type="number"
                         id="lower-value"
                         name="lower-value"
                         min="0"
                         max="10000"
                         value="0"
+                        placeholder="0"
                       />
                     </div>
                     <div class="field-up">
                       <label for="maximum-value" class="control"></label>
-                      <input
+                      <input                      
                         type="number"
                         id="maximum-value"
                         name="maximum-value"
                         min="0"
                         max="10000"
                         value="9000"
+                        placeholder="0"
                       />
                     </div>
                   </div>
@@ -244,13 +246,11 @@
       
       <div class="wrapper">
         <section class="hotel-filter">
-          <div class="select-block">
-            <div>
+          <div class="select-block">            
               <p class="search">
                 Найдено гостиниц:
                 <span class="search-result">38</span>
-              </p>
-            </div>
+              </p>            
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
@@ -333,7 +333,7 @@
                 </div>
                 <div class="buttons-cards-block">
                   <a class="hotel-card-button btn" href="#">подробнее</a>
-                  <a class="btn btn-favorites" href="#">в избранное</a>
+                  <button class="btn btn-favorites" type="button">в избранное</button>
                 </div>
                 <div class="hotel-card-rating-block">
                   <div class="rating">
@@ -365,7 +365,7 @@
                 </div>
                 <div class="buttons-cards-block">
                   <a class="hotel-card-button btn" href="#">подробнее</a>
-                  <a class="btn btn-in-favorites" href="#">в избранном</a>
+                  <button class="btn btn-in-favorites" type="button">в избранном</button>
                 </div>
                 <div class="hotel-card-rating-block">
                   <div class="rating">
@@ -397,7 +397,7 @@
                 </div>
                 <div class="buttons-cards-block">
                   <a class="hotel-card-button btn" href="#">подробнее</a>
-                  <a class="btn btn-favorites" href="#">в избранное</a>
+                  <button class="btn btn-favorites" type="button">в избранное</button>
                 </div>
                 <div class="hotel-card-rating-block">
                   <div class="rating">
@@ -428,7 +428,7 @@
                 </div>
                 <div class="buttons-cards-block">
                   <a class="hotel-card-button btn" href="#">подробнее</a>
-                  <a class="btn btn-favorites" href="#">в избранное</a>
+                  <button class="btn btn-favorites" type="button">в избранное</button>
                 </div>
                 <div class="hotel-card-rating-block">
                   <div class="rating">
