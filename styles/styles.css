@@ -89,14 +89,14 @@ body {
   border-radius: 4px;
   cursor: pointer;
   word-break: break-word;
+  font-family: "PT Sans", sans-serif;
 }
 
 .btn:disabled {
   background: #e5e5e5;  
 }
 
-.btn-apply {
-  font-family: inherit;
+.btn-apply {  
   padding: 8px 44px; 
   min-width: 191px;     
 }
@@ -105,8 +105,7 @@ body {
   background-color: #82b3d3; 
 }
 
-.btn-reset {    
-  font-family: inherit;
+.btn-reset {  
   background-color: transparent;
   padding: 6px 44px; 
   border: 3px solid transparent; 
@@ -116,14 +115,12 @@ body {
 .btn-in-favorites {
   background-color: #7db54f;
   width: 140px; 
-  padding: 8px; 
-  font-family: inherit; 
+  padding: 8px;  
 }
 
 .btn-favorites {
  padding: 8px; 
- width: 140px; 
- font-family: inherit; 
+ width: 140px;  
 }
 
 .hotel-card-button {
@@ -136,8 +133,7 @@ body {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 34px;       
-  color: #ffffff; 
+  padding: 8px 34px;   
   margin-top: 14px;
   margin-left: 20px;   
 }
@@ -159,7 +155,7 @@ body {
   padding: 8px 50px;
   font-style: normal;
   background-color: #82b3d3;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 36px;
   width: 232px;
   color: #ffffff;
@@ -670,7 +666,7 @@ body {
 .field {
   font-size: 18px;
   line-height: 24px;
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   padding: 14px 20px;
   width: 412px;
   background: #f2f2f2;
@@ -904,7 +900,7 @@ a.footer-contacts-logo {
 }
 
 .field-from input, .field-up input {    
-  font-family: inherit;   
+  font-family: "PT Sans", sans-serif; 
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -1170,7 +1166,7 @@ input[type="number"]:focus {
 }
 
 .select-control {
-  font-family: inherit; 
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
@@ -1184,6 +1180,7 @@ input[type="number"]:focus {
           appearance: none;
   background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
+  background-color: #ffffff;
   background-position: right 20px center;  
   padding-right: 40px;
   margin-left: 200px;
@@ -1550,7 +1547,7 @@ input[type="number"]:focus {
   width: 375px;   
   font-weight: 700;    
   margin-left: auto;
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1644,7 +1641,7 @@ input[type="number"]:focus {
 .count-field {
   background: #f2f2f2;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1730,11 +1727,11 @@ input[type="number"]:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-transform: none;
-  padding: 15px 18px 18px 22px;    
-  width: 216px; 
-  top: 100%;
-  right: 37px;
+  text-transform: none;  
+  padding: 20px 18px 18px 22px;    
+  width: 216px;  
+  top: 54px;
+  right: 42px;
   display: none;  
 }
 
@@ -1745,7 +1742,7 @@ input[type="number"]:focus {
   height: 9px;
   position:absolute;  
   top: -9px;  
-  left: 113px;  
+  left: 118px;  
 }
 
 .tooltip-toggle:hover + .tooltip-text,
