@@ -1721,10 +1721,6 @@ input[type="number"]:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.appointment-submit:active {
-  opacity: 0.2;
-}
-
 .tooltip {
   margin-top: 12px;
 }
