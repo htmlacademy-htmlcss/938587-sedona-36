@@ -28,8 +28,7 @@ body {
   color: #000000;   
 }
 
-.container {
-  margin: 0;
+.container { 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,8 +41,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  
-  min-height: 100%;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);   
 }
 
 .wrapper {
@@ -989,6 +987,7 @@ input[type="number"]:focus {
 }
 
 .catalog-filter-item {
+  border: 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,11 +998,7 @@ input[type="number"]:focus {
   margin-bottom: 16px;
 }
 
-.catalog-filter-item {
-  border: 0;
-}
-
-.catalog-filter-part_2 {
+`.catalog-filter-part_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,7 +1189,7 @@ input[type="number"]:focus {
   border: 2px solid #68a2ca;  
 }
 
-.select-control:hover {
+.select-control:placeholder-shown {
   border: 2px solid #3f5e72;  
 }
 
@@ -1603,7 +1598,8 @@ input[type="number"]:focus {
   margin-left: 46px;
 }
 
-.modal-button-min svg{
+.modal-button-min svg {
+  margin-bottom: 5px;
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1673,10 +1669,6 @@ input[type="number"]:focus {
   padding: 0;
   border: 0;
   border-radius: 4px;
-}
-
-.modal-button-min svg {
-  margin-bottom: 5px;
 }
 
 .appointment-submit {
