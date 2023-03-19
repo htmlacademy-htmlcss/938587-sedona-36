@@ -1023,7 +1023,7 @@ input[type="number"]:focus {
   margin-bottom: 16px;
 }
 
-`.catalog-filter-part_2 {
+.catalog-filter-part_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
